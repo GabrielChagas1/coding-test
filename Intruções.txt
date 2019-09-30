@@ -1,0 +1,12 @@
+Para rodar a aplicação basta rodar os seguintes comandos
+1-) composer update
+2-) php artisan migrate:refresh --seed (depois de ter configurado o arquivo env)
+
+Após executar, a base de dados será alimentado com valores gerados pela biblioteca faker
+
+Para entrar no painel basta logar com a credencial padrão
+email: admin
+senha: admin
+
+Para fazer os relatórios basta ir na lista dos fornecedores, produtos e estoque e utilizar a tabela para aplicar os filtros, podendo ser gerados arquivos pdf e excel.
+Documentação DataTables: https://datatables.net/

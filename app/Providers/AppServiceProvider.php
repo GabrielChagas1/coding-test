@@ -13,7 +13,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        //arrumando o erro do migrate
+        \Illuminate\Support\Facades\Schema::defaultStringLength(191);
     }
 
     /**
