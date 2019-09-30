@@ -101,7 +101,7 @@
                                             <button class="btn btn-info btn-sm">
                                                 <a style="color: #fff !important;" href="{{route('admin.produtos.atualizar', $item->id)}}">Editar <i class="dripicons-paperclip" aria-hidden="true"></i> </a>
                                             </button>   
-                                            {{-- <form method="POST" action="{{ route('admin.fornecedores.excluir', $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            {{-- <form method="POST" action="{{ route('admin.produtos.excluir', $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 
                                                 {{ csrf_field() }}
                                                 <button type="submit" rel="tooltip" class="btn btn-danger btn-sm"  onclick="return confirm(&quot;Confirma exclusão?\n\nTodos os produtos relacionados a esse Fornecedor, serão excluidos ? &quot;)">Excluir <i class="dripicons-trash" aria-hidden="true"></i> </button>
@@ -133,7 +133,8 @@
         $('.dataTables_info').hide();
 
         //excluir fornecedor
-        $('.excluir').click(function(){
+        $("#datatable-buttons").on("click", ".excluir", function(){
+            // your code goes here
             var id = $(this).attr('produto');
             var url = window.location.href.split('/admin')[0]+'/admin/produtos/excluir/'+ id
             //alert($(this).attr('fornecedor'));
@@ -157,7 +158,32 @@
                   $('#produto-'+id).hide('slow');
                 });
             });
-        })
+        });
+        // $('.excluir').click(function(){
+        //     var id = $(this).attr('produto');
+        //     var url = window.location.href.split('/admin')[0]+'/admin/produtos/excluir/'+ id
+        //     //alert($(this).attr('fornecedor'));
+        //     swal({
+        //     title: 'Você tem certeza?',
+        //     text: "Todas as referências desse produto será excluido!",
+        //     type: 'warning',
+        //     showCancelButton: true,
+        //     cancelButtonText: 'Cancelar',
+        //     confirmButtonColor: '#3085d6',
+        //     cancelButtonColor: '#d33',
+        //     confirmButtonText: 'Sim, excluir!'
+        //     }).then(function () {
+        //         $.post({
+        //             url: url,
+        //             type: 'POST',
+        //             data: {
+        //                 "_token" : "{{ csrf_token() }}",
+        //             }
+        //         }).done(function(msg){
+        //           $('#produto-'+id).hide('slow');
+        //         });
+        //     });
+        // })
     });
   </script>
 @endpush

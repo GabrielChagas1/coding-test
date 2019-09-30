@@ -104,12 +104,14 @@
         $('.dataTables_info').hide();
 
         //excluir fornecedor
-        $('.excluir').click(function(){
+        $("#datatable-buttons").on("click", ".excluir", function(){
+            // your code goes here
             var id = $(this).attr('estoque');
             var url = window.location.href.split('/admin')[0]+'/admin/estoque/excluir/'+ id
+            //alert($(this).attr('fornecedor'));
             swal({
             title: 'Você tem certeza?',
-            text: "Todas as referências desse estoque será excluido!",
+            text: "Todas as referências desse produto será excluido!",
             type: 'warning',
             showCancelButton: true,
             cancelButtonText: 'Cancelar',
@@ -127,7 +129,7 @@
                   $('#estoque-'+id).hide('slow');
                 });
             });
-        })
+        });
     });
   </script>
 @endpush

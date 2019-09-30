@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Produto;
+use App\Models\Estoque;
 use File;
 
 class ProdutoController extends Controller
@@ -115,8 +116,10 @@ class ProdutoController extends Controller
     public function excluir($id){
         try {
             //excluindo produto
+            Estoque::where('produtoId', $id)->update(['produtoId' => null]);
             Produto::destroy($id);
-            return redirect()->route('admin.produtos.index')->with('exclusao', true);
+              
+            return redirect()->route('admin.produtos.index');
 
         } catch (\Throwable $th) {
             throw $th;

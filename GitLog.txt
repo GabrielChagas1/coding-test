@@ -1,0 +1,14 @@
+0000000000000000000000000000000000000000 5027aa7082befd6467f3bb0d277582ecdb5c356a Gabriel Chagas <gabrielserq@outlook.com> 1569302601 -0300	branch: Created from HEAD
+5027aa7082befd6467f3bb0d277582ecdb5c356a 5c00d6ce9b1d03faa77643ea92ed6bf4ab50ffcd Gabriel Chagas <gabrielserq@outlook.com> 1569304991 -0300	commit: adicionando tema
+5c00d6ce9b1d03faa77643ea92ed6bf4ab50ffcd d6252b6da0218b7edef024fb0eb044eea422db08 Gabriel Chagas <gabrielserq@outlook.com> 1569462635 -0300	commit: migrations add
+d6252b6da0218b7edef024fb0eb044eea422db08 1039a9560c914c389147530a4e833943472127e0 Gabriel Chagas <gabrielserq@outlook.com> 1569473869 -0300	commit: finalizando crud do fornecedor
+1039a9560c914c389147530a4e833943472127e0 c9f9b3f49dbdd35fd50c8b898c6e1288e5ad8ac3 Gabriel Chagas <gabrielserq@outlook.com> 1569715321 -0300	commit: Arrumando os controller, validação e tradução dos datatables
+c9f9b3f49dbdd35fd50c8b898c6e1288e5ad8ac3 b4d166dead9550e3319f4fdf6e4de92cb01465cd Gabriel Chagas <gabrielserq@outlook.com> 1569722140 -0300	commit: Arrumando a tela principal do dashboard
+b4d166dead9550e3319f4fdf6e4de92cb01465cd 48766682cd569bd4a57d032ac5ba57973fff29da Gabriel Chagas <gabrielserq@outlook.com> 1569735326 -0300	commit: finalizando o estoqueController e também a seeders
+48766682cd569bd4a57d032ac5ba57973fff29da cd08436129b0c41542675f45ffee5c30f3a0286f Gabriel Chagas <gabrielserq@outlook.com> 1569788634 -0300	commit: Criando seeders e autenticação
+cd08436129b0c41542675f45ffee5c30f3a0286f 7736d090cab8e70b9cc5408190f7ac3e9ca1f128 Gabriel Chagas <gabrielserq@outlook.com> 1569803365 -0300	commit: subindo intruções
+7736d090cab8e70b9cc5408190f7ac3e9ca1f128 8ec4602248db67295d88ee2a3ebd207925148698 Gabriel Chagas <gabrielserq@outlook.com> 1569804867 -0300	commit: Arrumando erros que passaram
+8ec4602248db67295d88ee2a3ebd207925148698 3d9ed17a82fefe6adc6b15f73304d905aed5695c Gabriel Chagas <gabrielserq@outlook.com> 1569810737 -0300	commit: ajustes finais
+3d9ed17a82fefe6adc6b15f73304d905aed5695c b5d37da07eed7d9665f7bfc818e0a9699f1bcf38 Gabriel Chagas <gabrielserq@outlook.com> 1569812151 -0300	commit: arrumando os faker
+0000000000000000000000000000000000000000 5027aa7082befd6467f3bb0d277582ecdb5c356a Gabriel Chagas <gabrielserq@outlook.com> 1569812894 -0300	branch: Created from HEAD
+5027aa7082befd6467f3bb0d277582ecdb5c356a 954d69016ab45538d7b80f5f35f485925bce6d04 Gabriel Chagas <gabrielserq@outlook.com> 1569813202 -0300	commit: subindo arquivos

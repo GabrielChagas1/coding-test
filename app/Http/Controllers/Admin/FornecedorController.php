@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Fornecedor;
+use App\Models\Estoque;
 
 class FornecedorController extends Controller
 {
@@ -57,14 +58,12 @@ class FornecedorController extends Controller
             $this->validate(
                 $request, 
                 [
-                'codigo' => 'required|unique:fornecedores',
                 'nome' => 'required',
                 'endereco' => 'required',
                 'telefone' => 'required'
 
                 ],
                 [
-                'unique' => 'O :attribute já está foi cadastrado',
                 'required' => 'O campo :attribute é obrigatório'
                 ]
             );
@@ -80,6 +79,7 @@ class FornecedorController extends Controller
 
     public function excluir($id){
         try {
+            Estoque::where('fornecedorId', $id)->update(['fornecedorId' => null]);
             Fornecedor::destroy($id);
 
             return redirect()->route('admin.fornecedores.index')->with('exclusao', true);
